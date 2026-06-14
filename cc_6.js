@@ -36,7 +36,7 @@ class Company {
         this.employees.push(employee); // takes an object (employee/manager) and pushes it to the employees array
     }
     listEmployees() {
-        console.log("Company Employees:");
+        console.log("---------- Company Employees ----------");
         this.employees.forEach(em => { // loops through all employees in the array
             console.log(em.describe()); // calls each object's describe method
         });
