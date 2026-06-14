@@ -42,3 +42,13 @@ class Company {
         });
     }
 }
+
+// Instantiates
+const myCompany = new Company(); // runs company constructor (empty company that can store employees)
+
+myCompany.addEmployee(em1);
+myCompany.addEmployee(em2);
+myCompany.addEmployee(mg1);
+myCompany.addEmployee(mg2); // addEmployee(x) pushes objects into the array
+
+myCompany.listEmployees();
