@@ -26,3 +26,19 @@ const em2 = new Employee ("Gio", "Technology");
 
 const mg1 = new Manager("Leonardo", "Marketing", 10);
 const mg2 = new Manager("James", "Accounting", 8);
+
+// Company Class
+class Company {
+    constructor() {
+        this.employees = []; // holds manager + employee objects (inheritance)
+    }
+    addEmployee(employee) {
+        this.employees.push(employee); // takes an object (employee/manager) and pushes it to the employees array
+    }
+    listEmployees() {
+        console.log("Company Employees:");
+        this.employees.forEach(em => { // loops through all employees in the array
+            console.log(em.describe()); // calls each object's describe method
+        });
+    }
+}
