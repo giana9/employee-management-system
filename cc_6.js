@@ -19,3 +19,10 @@ class Manager extends Employee { // automatically inherits everything from Emplo
         return `${this.name} is the manager of the ${this.department} department and leads a team of ${this.teamSize}.`;
     } // overriding the employee describe() method
 }
+
+// Sample Employees + Managers
+const em1 = new Employee("Gerald", "Finance");
+const em2 = new Employee ("Gio", "Technology");
+
+const mg1 = new Manager("Leonardo", "Marketing", 10);
+const mg2 = new Manager("James", "Accounting", 8);
